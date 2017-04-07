@@ -11,3 +11,45 @@
 ## Mojo::Webqq项目地址:
 [Mojo::Webqq](https://github.com/sjdy521/Mojo-Webqq)  
 感谢[灰灰](https://github.com/sjdy521)的倾情付出.
+
+## 使用方式：
+
+1. 克隆项目。
+
+```shell
+git clone https://github.com/hzz1989/Mojo-Webqq-docker.git
+```
+
+也可以直接下载解压：
+
+```shell
+wget https://github.com/hzz1989/Mojo-Webqq-docker/archive/master.zip -O Mojo-Webqq-docker.zip
+
+unzip Mojo-Webqq-docker.zip
+```
+
+2. 修改`login.pl`文件。
+
+修改`login.pl`文件，添加或删减功能。
+
+具体可参考：[Mojo::Webqq使用简介](http://www.huangzhongzhang.cn/mojo-webqq-shi-yong-jian-jie.html)
+
+```shell
+cd Mojo-Webqq-docker
+
+vim login.pl
+```
+
+3. 创建docker镜像。
+
+```shell
+cd Mojo-Webqq-docker
+
+docker build -t mojo-webqq .
+```
+
+4. 启动镜像并扫描二维码。
+
+```shell
+docker run -t --env MOJO_WEBQQ_LOG_ENCODING=utf8 -p 5011:5011 -v /tmp:/tmp mojo-webqq
+```
