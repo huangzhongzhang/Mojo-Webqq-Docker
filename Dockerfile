@@ -7,4 +7,6 @@ RUN yum -y update && yum -y install openssl-devel wget unzip
 RUN wget https://github.com/sjdy521/Mojo-CentosPerl/archive/master.zip -O Mojo-CentosPerl.zip
 RUN unzip Mojo-CentosPerl.zip && mv Mojo-CentosPerl-master/perl/ /usr/local/
 ADD login.pl .
-CMD CMD /usr/local/perl/bin/perl login.pl
+ADD viewqr .
+RUN chmod 755 viewqr
+CMD /usr/local/perl/bin/perl login.pl
