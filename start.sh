@@ -1,7 +1,8 @@
 #!/bin/bash
 
-rm -f /tmp/mojo_webqq_*
-nohup /usr/local/perl/bin/perl login.pl &
+cd /tmp
+rm -f mojo_webqq_*
+nohup /usr/local/perl/bin/perl /root/login.pl &
 sleep 5
-./viewqr /tmp/mojo_webqq_qrcode_default.png
-tail -100f nohup.out
+./root/viewqr /tmp/mojo_webqq_qrcode_default.png
+cd -
