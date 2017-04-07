@@ -2,11 +2,7 @@
 
 使用docker来启动Mojo-Webqq，适用于不想在本机安装过多插件和应用，希望能快速推倒重启的童鞋。
 
-灰灰官方也有[Dockerfile](https://github.com/sjdy521/Mojo-Webqq/blob/master/docker-image/Dockerfile)模板，但由于是基于docker hub的perl镜像，在国内下载很慢而且经常连不上。
-
-故在原有模版的基础上稍加改进，基于Daocloud提供的centos镜像，以及灰灰打包的[Mojo-CentosPerl](https://github.com/sjdy521/Mojo-CentosPerl)二进制脚本，还有结合[Mojo-Webqq-Scripts](https://github.com/hzz1989/Mojo-Webqq-Scripts)来启动Mojo-Webqq。
-
-希望能带来用脚本启动时的熟悉体验。
+灰灰官方也有[Dockerfile](https://github.com/sjdy521/Mojo-Webqq/blob/master/docker-image/Dockerfile)模板，但是用命令行方式启动带入模块及参数有些许麻烦。故在原有模版的基础上稍加改进，结合[Mojo-Webqq-Scripts](https://github.com/hzz1989/Mojo-Webqq-Scripts)来启动Mojo-Webqq，希望能带来用脚本启动时的熟悉体验。
 
 ## Mojo::Webqq项目地址:
 [Mojo::Webqq](https://github.com/sjdy521/Mojo-Webqq)  
@@ -36,15 +32,17 @@ unzip Mojo-Webqq-docker.zip
 
 ```shell
 cd Mojo-Webqq-docker
-
 vim login.pl
 ```
 
 3. 创建docker镜像。
 
 ```shell
-cd Mojo-Webqq-docker
+# 添加daocloud加速器
+sudo curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://929e52fa.m.daocloud.io
 
+# 构建镜像
+cd Mojo-Webqq-docker
 docker build -t mojo-webqq .
 ```
 
