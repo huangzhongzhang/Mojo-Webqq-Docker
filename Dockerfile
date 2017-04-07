@@ -9,5 +9,5 @@ RUN unzip Mojo-CentosPerl.zip && mv Mojo-CentosPerl-master/perl/ /usr/local/
 ADD login.pl .
 ADD start.sh .
 ADD viewqr .
-RUN chmod 755 viewqr
+RUN chmod 755 viewqr start.sh login.pl
 CMD sh start.sh

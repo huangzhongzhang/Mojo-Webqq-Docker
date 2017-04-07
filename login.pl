@@ -16,10 +16,7 @@ use Mojo::Webqq;
 
 # 推荐手机安装[QQ安全中心]APP，方便随时掌握自己帐号的情况
 
-# 新版本已无需指定qq号
-# my $qq = 284759461;
-
-# 初始化一个客户端对象，设置登录的qq号
+# 初始化一个客户端对象
 
 my $client=Mojo::Webqq->new(
 ua_debug    =>  0,         #是否打印详细的debug信息
