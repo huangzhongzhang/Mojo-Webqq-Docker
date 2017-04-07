@@ -108,7 +108,7 @@ $client->load("MobileInfo");
 #示例：手机 1888888888
 
 #创建知识库
-$client->load("KnowledgeBase2",data=>{
+$client->load("KnowledgeBase",data=>{
         allow_group     => [ "PERL学习交流" ], # 可选，允许插件的群，可以是群名称或群号码
         ban_group       => [ "私人群", 123456 ], # 可选，禁用该插件的群，可以是群名称或群号码
         file            => './KnowledgeBase2.txt', # 数据库保存路径，纯文本形式，可以编辑
