@@ -19,9 +19,8 @@ use Mojo::Webqq;
 # 初始化一个客户端对象
 
 my $client=Mojo::Webqq->new(
-ua_debug    =>  0,         #是否打印详细的debug信息
+ua_debug    =>  1,         #是否打印详细的debug信息
 log_level   => "info",     #日志打印级别
-qq          =>  $qq,       #登录的qq帐号
 login_type  =>  "qrlogin", #"qrlogin"表示二维码登录
 );
 
