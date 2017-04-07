@@ -1,0 +1,12 @@
+FROM daocloud.io/centos
+MAINTAINER www.huangzhongzhang.cn
+WORKDIR /root
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN yum -y install epel-release && yum -y update && yum -y install openssl openssl-*  perl perl-App-cpanminus
+RUN cpanm --mirror http://mirrors.163.com/cpan/ Mojo::Webqq
+ADD login.pl .
+ADD start.sh .
+ADD viewqr .
+RUN chmod 755 viewqr start.sh login.pl
+CMD sh start.sh
