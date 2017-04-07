@@ -1,11 +1,11 @@
-FROM daocloud.io/centos
-MAINTAINER www.huangzhongzhang.cn
+FROM perl:5.22
+MAINTAINER sjdy521 <sjdy521@163.com>
 WORKDIR /root
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN yum -y update && yum -y install openssl-devel wget unzip
-RUN wget https://github.com/sjdy521/Mojo-CentosPerl/archive/master.zip -O Mojo-CentosPerl.zip
-RUN unzip Mojo-CentosPerl.zip && mv Mojo-CentosPerl-master/perl/ /usr/local/
+ADD sources.list /etc/apt/
+RUN apt-get update && apt-get install -y unzip
+RUN cpanm --mirror http://mirrors.163.com/cpan/ Encode::Locale IO::Socket::SSL Mojolicious Mojo::Webqq
 ADD login.pl .
 ADD start.sh .
 ADD viewqr .
