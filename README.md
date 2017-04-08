@@ -52,3 +52,7 @@ docker build -t mojo-webqq .
 ```shell
 docker run -t --name Mojo-Webqq --env MOJO_WEBQQ_LOG_ENCODING=utf8 -p 5011:5011 -v /tmp:/tmp mojo-webqq
 ```
+
+**示例**
+
+![mojo-webqq-docker-eg](http://cdn.huangzhongzhang.cn/wp-content/uploads/2017/04/mojo-webqq-docker-eg.gif?imageslim%7CimageView2/2/w/4096/interlace/1/q/100)
