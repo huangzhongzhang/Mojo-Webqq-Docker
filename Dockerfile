@@ -3,7 +3,7 @@ MAINTAINER sjdy521 <sjdy521@163.com>
 WORKDIR /root
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN cpanm -vn --mirror http://mirrors.163.com/cpan/ Mojo::SMTP::Client MIME::Lite Encode::Locale IO::Socket::SSL Mojolicious Mojo::Webqq
+RUN cpanm -vn --mirror http://mirrors.163.com/cpan/ Mojo::IRC::Server::Chinese Mojo::SMTP::Client MIME::Lite Encode::Locale IO::Socket::SSL Mojolicious Mojo::Webqq
 ADD login.pl .
 ADD start.sh .
 ADD viewqr .
