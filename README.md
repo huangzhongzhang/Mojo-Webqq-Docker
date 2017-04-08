@@ -50,7 +50,7 @@ docker build -t mojo-webqq .
 4. 启动镜像并扫描二维码。
 
 ```shell
-docker run -t --name Mojo-Webqq --env MOJO_WEBQQ_LOG_ENCODING=utf8 -p 5011:5011 -v /tmp:/tmp mojo-webqq
+docker run -t --name Mojo-Webqq -p 5011:5011 -v /tmp:/tmp mojo-webqq
 ```
 
 **示例**
