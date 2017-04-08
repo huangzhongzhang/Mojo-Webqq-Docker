@@ -1,4 +1,4 @@
-# Mojo-Webqq-docker
+# Mojo-Webqq-Docker
 
 使用docker来启动Mojo-Webqq，适用于不想在本机安装过多插件和应用，希望能快速推倒重启的童鞋。
 
@@ -13,15 +13,15 @@
 1. 克隆项目。
 
 ```shell
-git clone https://github.com/hzz1989/Mojo-Webqq-docker.git
+git clone https://github.com/hzz1989/Mojo-Webqq-Docker.git
 ```
 
 也可以直接下载解压：
 
 ```shell
-wget https://github.com/hzz1989/Mojo-Webqq-docker/archive/master.zip -O Mojo-Webqq-docker.zip
+wget https://github.com/hzz1989/Mojo-Webqq-Docker/archive/master.zip -O Mojo-Webqq-Docker.zip
 
-unzip Mojo-Webqq-docker.zip
+unzip Mojo-Webqq-Docker.zip
 ```
 
 2. 修改`login.pl`文件。
@@ -31,7 +31,7 @@ unzip Mojo-Webqq-docker.zip
 具体可参考：[Mojo::Webqq使用简介](http://www.huangzhongzhang.cn/mojo-webqq-shi-yong-jian-jie.html)
 
 ```shell
-cd Mojo-Webqq-docker
+cd Mojo-Webqq-Docker
 vim login.pl
 ```
 
@@ -42,7 +42,7 @@ vim login.pl
 sudo curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://929e52fa.m.daocloud.io
 
 # 构建镜像
-cd Mojo-Webqq-docker
+cd Mojo-Webqq-Docker
 docker build -t mojo-webqq .
 ```
 
