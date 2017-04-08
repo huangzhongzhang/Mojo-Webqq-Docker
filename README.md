@@ -40,6 +40,7 @@ vim login.pl
 ```shell
 # 添加daocloud加速器
 sudo curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://929e52fa.m.daocloud.io
+sudo systemctl restart docker
 
 # 构建镜像
 cd Mojo-Webqq-Docker
