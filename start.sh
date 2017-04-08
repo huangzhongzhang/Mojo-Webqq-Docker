@@ -2,7 +2,7 @@
 
 cd /tmp
 rm -f mojo_webqq_* nohup.out
-nohup /root/login.pl &
+nohup perl /root/login.pl &
 sleep 5
 /root/viewqr /tmp/mojo_webqq_qrcode_default.png
 tail -f nohup.out
