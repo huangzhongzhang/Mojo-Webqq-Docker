@@ -22,6 +22,7 @@ my $client=Mojo::Webqq->new(
 ua_debug    =>  0,         #是否打印详细的debug信息
 log_level   => "info",     #日志打印级别
 login_type  =>  "qrlogin", #"qrlogin"表示二维码登录
+poll_failure_count_max  =>  100, # 获取信息失败重试次数
 );
 
 # 注意: 腾讯可能已经关闭了帐号密码的登录方式，这种情况下只能使用二维码扫描登录
