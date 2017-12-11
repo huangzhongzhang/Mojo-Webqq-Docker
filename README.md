@@ -72,4 +72,4 @@ mojo-webqq
 
 **示例**
 
-![mojo-webqq-docker-eg](http://cdn.huangzhongzhang.cn/wp-content/uploads/2017/04/mojo-webqq-docker-eg.gif?imageslim%7CimageView2/2/w/4096/interlace/1/q/100)
+![mojo-webqq-docker-eg](https://huangzz.xyz/uploads/mojo-webqq-docker-eg.gif)
