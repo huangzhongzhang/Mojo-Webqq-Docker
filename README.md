@@ -57,15 +57,6 @@ docker run -t \
 --env MOJO_WEBQQ_LOG_ENCODING=utf8 \
 -p 5011:5011 \
 -v /home/ubuntu/Mojo-Webqq-Docker:/root \
---add-host ssl.ptlogin2.qq.com:163.177.71.148 \
---add-host ui.ptlogin2.qq.com:182.254.38.53 \
---add-host smtp.qq.com:14.18.245.164 \
---add-host ptlogin4.web2.qq.com:14.17.41.156 \
---add-host w.qq.com:121.51.142.15 \
---add-host s.web2.qq.com:121.51.142.33 \
---add-host d1.web2.qq.com:182.254.38.67 \
---add-host qun.qq.com:182.254.104.46 \
---add-host www.tuling123.com:182.92.110.58 \
 --dns 114.114.114.114 \
 mojo-webqq
 ```
