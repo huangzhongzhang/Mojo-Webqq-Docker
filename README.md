@@ -2,11 +2,14 @@
 
 使用docker来启动Mojo-Webqq，适用于不想在本机安装过多插件和应用，希望能快速推倒重启的童鞋。
 
-灰灰官方也有[Dockerfile](https://github.com/sjdy521/Mojo-Webqq/blob/master/docker-image/Dockerfile)模板，但是用命令行方式启动带入模块及参数有些许麻烦。故在原有模版的基础上稍加改进，结合[Mojo-Webqq-Scripts](https://github.com/hzz1989/Mojo-Webqq-Scripts)来启动Mojo-Webqq，希望能带来用脚本启动时的熟悉体验。
+* 此项目不再更新，只根据 Mojo::Webqq 的更新做对应的 bug 修复和更新。
+* 新项目请移步：[NPC](https://github.com/huangzhongzhang/NPC)。
 
 ## Mojo::Webqq项目地址:
 [Mojo::Webqq](https://github.com/sjdy521/Mojo-Webqq)  
 感谢[灰灰](https://github.com/sjdy521)的倾情付出.
+
+灰灰官方也有[Dockerfile](https://github.com/sjdy521/Mojo-Webqq/blob/master/docker-image/Dockerfile)模板，但是用命令行方式启动带入模块及参数有些许麻烦。故在原有模版的基础上稍加改进，结合[Mojo-Webqq-Scripts](https://github.com/hzz1989/Mojo-Webqq-Scripts)来启动Mojo-Webqq，希望能带来用脚本启动时的熟悉体验。
 
 ## 使用方式：
 
